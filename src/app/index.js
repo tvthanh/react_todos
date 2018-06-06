@@ -4,10 +4,13 @@ var ReactDOM = require('react-dom');
 var TodoItem = require('./components/todoItem');
 var AddItem = require('./components/addItem');
 
+// CSS require
+require('./css/index.css');
+
 var App = React.createClass({
   getInitialState: function() {
     return {
-      todos: ['wake up', 'wash your face', 'praise your buddha', 'have a breakfast']
+      todos: ['wake up', 'wash my face', 'praise your buddha', 'have a breakfast']
     };
   },
 
