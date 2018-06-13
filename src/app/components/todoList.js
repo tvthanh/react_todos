@@ -57,11 +57,15 @@ var TodoList = React.createClass({
 
   // Lifecycle components
   componentWillMount: function() {
-    console.log('componentWillMount');
+    console.warn('componentWillMount');
   },
 
   componentDidMount: function() {
-    console.log('componentDidMount');
+    console.warn('componentDidMount');
+  },
+
+  componentWillUpdate: function() {
+    console.warn('componentUpdateMount');
   }
 
 });
